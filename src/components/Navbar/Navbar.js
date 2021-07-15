@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { FaMagento, FaTimes, FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 import { Link } from 'react-router-dom'
-import { Container } from '../../globalStyles'
+import { Container, Button } from '../../globalStyles'
 
 const Nav = styled.nav`
 	background: #101522;
@@ -101,10 +101,48 @@ const NavLinks = styled(Link)`
 		}
 	}
 `
+const NavItemBtn = styled.li`
+	@media screen and (max-width: 960px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 120px;
+	}
+`
+
+const NavBtnLink = styled(Link)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 8px 16px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+`
+
 const Navbar = () => {
 	const [click, setClick] = useState(false)
+	const [button, setButton] = useState(true)
 
 	const handleClick = () => setClick(!click)
+	const closeMobileMenu = () => setClick(false)
+
+	const showButton = () => {
+		if (window.innetWidth <= 960) {
+			setButton(false)
+		} else {
+			setButton(true)
+		}
+	}
+
+	useEffect(() => {
+		showButton()
+	}, [])
+
+	window.addEventListener('resize', showButton)
 
 	return (
 		<>
@@ -122,14 +160,25 @@ const Navbar = () => {
 							<NavItem>
 								<NavLinks to='/'>Home</NavLinks>
 							</NavItem>
-
 							<NavItem>
 								<NavLinks to='/services'>Services</NavLinks>
 							</NavItem>
-
 							<NavItem>
 								<NavLinks to='/products'>Products</NavLinks>
 							</NavItem>
+							<NavItemBtn>
+								{button ? (
+									<NavBtnLink to='/sign-up'>
+										<Button primary>SIGN UP</Button>
+									</NavBtnLink>
+								) : (
+									<NavBtnLink to='/sign-up'>
+										<Button onClick={closeMobileMenu} fontBig primary>
+											SIGN UP
+										</Button>
+									</NavBtnLink>
+								)}
+							</NavItemBtn>
 						</NavMenu>
 					</NavbarContainer>
 				</Nav>
