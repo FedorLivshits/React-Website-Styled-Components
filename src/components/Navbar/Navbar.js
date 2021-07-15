@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { FaMagento } from 'react-icons/fa'
+import { FaMagento, FaTimes, FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { Container } from '../../globalStyles'
 
@@ -37,8 +37,25 @@ const NavLogo = styled(Link)`
 const NavIcon = styled(FaMagento)`
 	margin: 0.5rem;
 `
+const MobileIcon = styled.div`
+	display: none;
+
+	@media screen and (max-width: 960px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 60%);
+		font-size: 1.8rem;
+		cursor: pointer;
+	}
+`
 
 const Navbar = () => {
+	const [click, setClick] = useState(false)
+
+	const handleClick = () => setClick(!click)
+
 	return (
 		<>
 			<Nav>
@@ -47,6 +64,9 @@ const Navbar = () => {
 						<NavIcon />
 						ULTRA
 					</NavLogo>
+					<MobileIcon onClick={handleClick}>
+						{click ? <FaTimes /> : <FaBars />}
+					</MobileIcon>
 				</NavbarContainer>
 			</Nav>
 		</>
