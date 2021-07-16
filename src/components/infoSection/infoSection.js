@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import svg from '../../images/svg-1.svg'
+
 import { Link } from 'react-router-dom'
 import { Container, Button } from '../../globalStyles'
 
@@ -115,7 +115,7 @@ const InfoSection = ({
 						</InfoColumn>
 						<InfoColumn>
 							<ImgWrapper st art={start}>
-								<Img src={svg} alt={alt} />
+								<Img src={img} alt={alt} />
 							</ImgWrapper>
 						</InfoColumn>
 					</InfoRow>
