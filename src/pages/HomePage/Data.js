@@ -12,15 +12,15 @@ export const homeObjOne = {
 	topLine: 'Marketing Agency',
 	headline: 'Lead Generation Specialist for Online Businesses',
 	description:
-		'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+	  'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
 	buttonLabel: 'Get Started',
 	imgStart: '',
 	img: svg_1,
 	alt: 'Credit Card',
-	start: '',
-}
-
-export const homeObjTwo = {
+	start: ''
+  };
+  
+  export const homeObjTwo = {
 	primary: true,
 	lightBg: false,
 	lightTopLine: true,
@@ -29,15 +29,15 @@ export const homeObjTwo = {
 	topLine: 'Instant Setup',
 	headline: 'Extremely quick onboarding process',
 	description:
-		"Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
+	  "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
 	buttonLabel: 'Learn More',
 	imgStart: '',
-	img: profile,
+	img: svg_2,
 	alt: 'Vault',
-	start: '',
-}
-
-export const homeObjThree = {
+	start: ''
+  };
+  
+  export const homeObjThree = {
 	primary: false,
 	lightBg: true,
 	lightTopLine: false,
@@ -45,17 +45,17 @@ export const homeObjThree = {
 	lightTextDesc: false,
 	topLine: 'Sarah Jeni',
 	headline:
-		'Ultra helped me increase my revenue by over 3X in less than 3 months!',
+	  'Ultra helped me increase my revenue by over 3X in less than 3 months!',
 	description:
-		"Their team is wonderful! I can't believe I didn't start working with them earlier.",
+	  "Their team is wonderful! I can't believe I didn't start working with them earlier.",
 	buttonLabel: 'View Case Study',
 	imgStart: 'start',
-	img: svg_2,
+	img: profile,
 	alt: 'Vault',
-	start: 'true',
-}
-
-export const homeObjFour = {
+	start: 'true'
+  };
+  
+  export const homeObjFour = {
 	primary: true,
 	lightBg: false,
 	lightTopLine: true,
@@ -64,10 +64,10 @@ export const homeObjFour = {
 	topLine: 'Secure Database',
 	headline: 'All your data is stored on our secure server',
 	description:
-		'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
+	  'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
 	buttonLabel: 'Sign Up Now',
 	imgStart: 'start',
 	img: svg_3,
 	alt: 'Vault',
-	start: 'true',
-}
+	start: 'true'
+  };
