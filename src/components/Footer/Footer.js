@@ -28,7 +28,7 @@ import {
 	SocialIconLink,
 } from './Footer-style'
 
-const Footer = () => {
+export const Footer = () => {
 	return (
 		<>
 			<FooterContainer>
@@ -113,5 +113,3 @@ const Footer = () => {
 		</>
 	)
 }
-
-export default Footer

@@ -1,8 +1,8 @@
 import React from 'react'
-import InfoSection from '../../components/InfoSection/InfoSection'
+import { InfoSection } from '../../components/InfoSection/InfoSection'
 import { homeObjOne, homeObjThree } from '../HomePage/Data'
 
-const SignUp = () => {
+export const SignUp = () => {
 	return (
 		<>
 			<InfoSection {...homeObjOne} />
@@ -10,5 +10,3 @@ const SignUp = () => {
 		</>
 	)
 }
-
-export default SignUp

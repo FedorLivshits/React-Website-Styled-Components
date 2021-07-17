@@ -10,11 +10,10 @@ import {
 	Heading,
 	Subtitle,
 	ImgWrapper,
-	Img
-  } from './InfoSection-style';
+	Img,
+} from './InfoSection-style'
 
-
-const InfoSection = ({
+export const InfoSection = ({
 	primary,
 	lightBg,
 	topLine,
@@ -57,5 +56,3 @@ const InfoSection = ({
 		</>
 	)
 }
-
-export default InfoSection

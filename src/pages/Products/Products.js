@@ -1,8 +1,8 @@
 import React from 'react'
 import { homeObjOne, homeObjTwo } from '../HomePage/Data'
-import InfoSection from '../../components/InfoSection/InfoSection'
+import { InfoSection } from '../../components/InfoSection/InfoSection'
 
-const Products = () => {
+export const Products = () => {
 	return (
 		<>
 			<InfoSection {...homeObjOne} />
@@ -10,5 +10,3 @@ const Products = () => {
 		</>
 	)
 }
-
-export default Products

@@ -15,7 +15,7 @@ import {
 	NavMenu,
 } from './Navbar-style'
 
-const Navbar = () => {
+export const Navbar = () => {
 	const [click, setClick] = useState(false)
 	const [button, setButton] = useState(true)
 
@@ -78,5 +78,3 @@ const Navbar = () => {
 		</>
 	)
 }
-
-export default Navbar
