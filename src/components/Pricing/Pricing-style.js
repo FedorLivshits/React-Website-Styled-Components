@@ -7,6 +7,9 @@ export const PricingSection = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	background: #4b59f7;
+    @media screen and (max-width: 768px) {
+        padding: 60px 0 60px;
+	}
 `
 
 export const PricingWrapper = styled.div`
@@ -26,6 +29,9 @@ export const PricingHeading = styled.h1`
 	color: #fff;
 	font-size: 48px;
 	margin-bottom: 24px;
+    @media screen and (max-width: 768px) {
+        font-size: 38px;
+	}
 `
 
 export const PricingContainer = styled.div`
