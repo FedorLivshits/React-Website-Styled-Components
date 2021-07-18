@@ -3,7 +3,7 @@ export const InfoSec = styled.div`
 	color: white;
 	padding: 160px 0;
 	background: ${({ lightBg }) => (lightBg ? '#fff' : '#101522')};
-    @media screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		padding: 60px 0;
 	}
 `
@@ -69,7 +69,7 @@ export const Heading = styled.h1`
 	line-height: 1.1;
 	font-weight: 600;
 	color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
-    @media screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		font-size: 38px;
 	}
 `
